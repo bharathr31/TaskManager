@@ -14,7 +14,13 @@
   gap: 1rem;
 }
 
-
+@media (max-width:396px)
+{
+  .filter-buttons
+  {
+      padding-left: 10px;
+  }
+}
 
 .filter-buttons {
   display: flex;
