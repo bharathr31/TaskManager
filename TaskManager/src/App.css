@@ -1,0 +1,19 @@
+.app {
+  display: flex;
+  height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+  background: rgb(138, 135, 135);
+  min-width: 100vw;
+}
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+.main-content {
+  flex: 1;
+  padding: 2rem;
+  overflow-y: auto;
+  background: url(../src/assets/istockphoto-1271863211-612x612.jpg);
+  background-size: cover;
+}
+

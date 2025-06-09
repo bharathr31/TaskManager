@@ -1,0 +1,121 @@
+/* Base styling */
+.task-input {
+  display: grid;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+/* For 2 parts: input + button */
+.task-input.two {
+  grid-template-columns: 7fr 1fr;
+}
+
+/* For 3 parts: input + date + button */
+.task-input.three {
+  grid-template-columns: 5fr 2fr 1fr;
+}
+
+.task-input input {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.task-input button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #0078d4;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.task-input button:hover {
+  background-color: #005fa3;
+}
+
+@media (min-width:665px) and  (max-width:720px)
+{
+  .task-input.three
+  {
+    display: flex;
+    flex-direction: column;
+    place-self: center;
+  }
+}
+@media (min-width:501px) and (max-width:664px)
+{
+  .task-input.three
+  {
+    display: flex;
+    place-content: center;
+    margin-left: -40vw;
+  }
+}
+@media (min-width:421px) and (max-width:500px)
+{
+  .task-input.three
+  {
+    display: flex;
+    place-content: center;
+    margin-left: -10vw;
+  }
+}
+@media (min-width:337px) and (max-width:420px)
+{
+  .task-input.three
+  {
+    display: flex;
+    flex-direction: column;
+    margin-left: max(-70vw,-20rem);
+  }
+}
+@media (max-width:336px)
+{
+  .task-input.three
+  {
+    display: flex;
+    flex-direction: column;
+    margin-left: -90vw;
+    place-self: start;
+  }
+}
+@media (min-width:501px) and  (max-width:664px)
+{
+  .task-input.two
+  {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: -65vw;
+    margin-top: 200px;
+    place-self: center;
+  }
+}
+  @media (min-width:421px) and  (max-width:500px)
+  {
+    .task-input.two
+    {
+      display: flex;
+      margin-left: -40vw;
+    }
+  }
+ @media (min-width:321px) and  (max-width:420px)
+  {
+    .task-input.two
+    {
+      display: flex;
+      position: relative;
+      margin-left: -70vw;
+    }
+  }
+@media (max-width:396px)
+{
+  .task-input.two
+  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: -90vw;
+  }
+}

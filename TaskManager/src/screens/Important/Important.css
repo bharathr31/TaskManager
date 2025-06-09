@@ -1,0 +1,31 @@
+.important{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 20px 30px;
+  box-sizing: border-box;
+  border-radius: 40px;
+}
+.important-top
+{
+    color: black;
+}
+.important-top p{
+    margin-top: -15px;
+}
+.important-bottom
+{
+    padding-bottom: 20px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin-left: 330px;
+    margin-right: 70px;
+    position: absolute;
+}
+.important-list {
+  width: 100%;
+  flex: 1;
+  overflow-y: auto;
+  margin-top: 1rem;
+  }
