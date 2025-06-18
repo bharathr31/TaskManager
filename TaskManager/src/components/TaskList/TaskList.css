@@ -41,6 +41,10 @@
   font-weight: 500;
   transition: 0.3s ease;
 }
+.filter-buttons
+{
+  color: white;
+}
 
 .filter-buttons button.active {
   background-color: #007bff;
