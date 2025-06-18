@@ -23,9 +23,7 @@ const TaskItem = ({ task, screen }) => {
    )}
   </span>
 </div>
-
-
-        <button onClick={() => removeTask(screen, task.id)}>✕</button>
+    <button onClick={() => removeTask(screen, task.id)}>✕</button>
     </div>
   );
 };

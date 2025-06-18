@@ -6,7 +6,7 @@ import './TaskList.css';
 
 const TaskList = ({ screen }) => {
   const { tasks, reorderTasks } = useTask();
-  const [filter, setFilter] = useState('all'); // all | completed | incomplete
+  const [filter, setFilter] = useState('all'); 
 
   const handleDragEnd = (result) => {
     if (!result.destination) return;

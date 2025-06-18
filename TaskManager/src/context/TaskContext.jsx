@@ -4,7 +4,7 @@ export const TaskContext = createContext();
 
 export const TaskProvider = ({ children }) => {
   const [tasks, setTasks] = useState(() => {
-    // 🔹 Load from localStorage on FIRST render only
+    //  Load from localStorage on FIRST render only
     const savedTasks = localStorage.getItem('tasks');
     return savedTasks ? JSON.parse(savedTasks) : {
       myday: [],
@@ -13,7 +13,7 @@ export const TaskProvider = ({ children }) => {
     };
   });
 
-  // 🔹 Save to localStorage every time tasks change
+  // Save to localStorage every time tasks change
   useEffect(() => {
     localStorage.setItem('tasks', JSON.stringify(tasks));
   }, [tasks]);
